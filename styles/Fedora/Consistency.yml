@@ -1,0 +1,59 @@
+# styles/Fedora/Consistency.yml
+extends: consistency
+message: "Fedora Style: Use '%s' for consistency"
+level: warning
+scope: text
+
+swap:
+  select: click
+  choose: click
+  utilize: use
+  install: set up
+  uninstall: remove
+  enable: activate
+  disable: deactivate
+  configure: set
+  initialize: set up
+  initialize: configure
+  implement: add
+  execute: run
+  start: launch
+  stop: exit
+  save: commit
+  reset: restore
+  update: upgrade
+  download: fetch
+  upload: send
+  modify: change
+  complete: finish
+  cancel: abort
+  trigger: initiate
+  retry: try again
+  succeed: complete
+  fail: error
+  issue: problem
+  resolve: fix
+  debug: troubleshoot
+  validate: check
+  process: handle
+  result: outcome
+  error: failure
+  application: app
+  procedure: process
+  interaction: action
+  interface: screen
+  toggle: switch
+  configure: set up
+  preference: setting
+  documentation: guide
+  user: individual
+  administrator: admin
+  operation: task
+  file: document
+  folder: directory
+  server: machine
+  database: data store
+  login: sign in
+  logout: sign out
+  web browser: browser
+  mobile app: app

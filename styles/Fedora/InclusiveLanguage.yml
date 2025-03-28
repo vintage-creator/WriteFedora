@@ -1,0 +1,23 @@
+# styles/Fedora/InclusiveLanguage.yml
+extends: substitution
+message: "Fedora Style: Use inclusive language - %s"
+level: error
+swap:
+  blacklist: denylist
+  whitelist: allowlist
+  master: primary
+  slave: replica
+  man: person
+  mankind: humankind
+  guys: everyone
+  chairman: chairperson
+  policeman: police officer
+  fireman: firefighter
+  salesman: salesperson
+  waitperson: server
+  foreman: supervisor
+  freshman: first-year student
+  husband: partner
+  wife: partner
+  man-made: human-made
+

@@ -1,0 +1,4 @@
+# styles/Fedora/Grammar.yml
+extends: readability
+level: warning
+message: "Fedora Style: %s"

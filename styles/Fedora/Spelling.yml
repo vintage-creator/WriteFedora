@@ -1,0 +1,45 @@
+# styles/Fedora/Spelling.yml
+extends: spelling
+message: "Fedora Style: %s"
+level: error
+ignores:
+  - GNOME
+  - RHEL
+  - Podman
+  - DNF
+  - Fedora
+  - SELinux
+  - Wayland
+  - Anaconda
+  - Systemd
+  - Cockpit
+  - OpenJDK
+  - Kubernetes
+  - Docker
+  - Git
+  - Bash
+  - KDE
+  - Vim
+  - Emacs
+  - Linux
+  - Shell
+  - JavaScript
+  - TypeScript
+  - Markdown
+  - Node.js
+  - React
+  - Python
+  - Ruby
+  - PostgreSQL
+  - MySQL
+  - SQLite
+  - MongoDB
+  - Cloudflare
+  - Terraform
+  - Brew
+  - Clojure
+  - Vue.js
+  - Angular
+  - Jenkins
+  - Flutter
+  - Svelte

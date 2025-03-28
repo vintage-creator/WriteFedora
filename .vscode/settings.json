@@ -1,0 +1,20 @@
+{
+    // Vale configuration
+    "vale.valeCLI.path": "/usr/local/bin/vale",
+    "vale.server.enabled": true,
+    
+    // File visibility
+    "files.exclude": {
+        "out": true,   // Hide compiled JS files
+        "dist": true   // Hide bundled extension files
+    },
+    
+    // Search configuration
+    "search.exclude": {
+        "out": true,   // Exclude from search
+        "dist": true   // Exclude from search
+    },
+    
+    // TypeScript settings
+    "typescript.tsc.autoDetect": "off"
+}

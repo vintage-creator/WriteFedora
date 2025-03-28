@@ -1,0 +1,3 @@
+extends: substitution
+message: "Fedora Style: %s"
+link: https://docs.fedoraproject.org/

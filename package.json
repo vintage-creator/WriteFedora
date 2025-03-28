@@ -1,0 +1,125 @@
+{
+  "name": "writefedora",
+  "displayName": "WriteFedora",
+  "description": "Enhance your Fedora documentation workflow in VS Code with templates, AsciiDoc shortcuts, and style-aware linting.",
+  "version": "0.0.2",
+  "publisher": "Israelabazie",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "icon": "media/WriteFedora_icon.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vintage-creator/WriteFedora"
+  },
+  "bugs": {
+    "url": "https://github.com/vintage-creator/WriteFedora/issues"
+  },
+  "activationEvents": [
+  "onLanguage:asciidoc",
+  "onStartupFinished",
+  "onView:writefedoraButtons",
+  "onCommand:writefedora.generateTemplate",
+  "onCommand:writefedora.openStyleGuide",
+  "onCommand:writefedora.openValeGuide",
+  "onCommand:writefedora.openAsciiDocExtension",
+  "onCommand:writefedora.previewDoc",
+  "onCommand:writefedora.exportHTML"
+],
+  "main": "./dist/main.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "asciidoc",
+        "aliases": ["AsciiDoc", "asciidoc"],
+        "extensions": [".adoc", ".asciidoc"]
+      }
+    ],
+  "commands": [
+    {
+      "command": "writefedora.generateTemplate",
+      "title": "Generate Fedora Docs Template",
+      "category": "WriteFedora"
+    },
+    {
+      "command": "writefedora.openStyleGuide",
+      "title": "Open Fedora Style Guide",
+      "category": "WriteFedora"
+    },
+    {
+      "command": "writefedora.openValeGuide",
+      "title": "Open Vale Linter Guide",
+      "category": "WriteFedora"
+    },
+    {
+      "command": "writefedora.openAsciiDocExtension",
+      "title": "Open AsciiDoc Extension",
+      "category": "WriteFedora"
+    },
+    {
+      "command": "writefedora.previewDoc",
+      "title": "Preview Fedora Doc",
+      "category": "WriteFedora"
+    },
+    {
+      "command": "writefedora.exportHTML",
+      "title": "Export to HTML",
+      "category": "WriteFedora"
+    }
+  ],
+  "viewsContainers": {
+    "activitybar": [
+      {
+        "id": "writefedora",
+        "title": "WriteFedora",
+        "icon": "media/WriteFedora_icon.png"
+      }
+    ]
+  },
+  "views": {
+    "writefedora": [
+      {
+        "id": "writefedoraButtons",
+        "name": "Document Actions"
+      }
+    ]
+  }
+},
+  "scripts": {
+    "vscode:prepublish": "yarn run package",
+    "compile": "yarn run check-types && yarn run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "yarn run check-types && yarn run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.54.0",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.21.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "asciidoctor": "^3.0.4"
+  }
+}

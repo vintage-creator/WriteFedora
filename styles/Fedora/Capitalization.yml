@@ -1,0 +1,19 @@
+# styles/Fedora/Capitalization.yml
+extends: capitalization
+message: "Fedora Style: Use '%s' instead"
+level: warning
+
+scope: text
+exceptions:
+  - linux
+  - system
+  - bash
+  - terminal
+  - network
+  - docker
+  - git
+  - shell
+  - virtualization
+  - server
+
+
