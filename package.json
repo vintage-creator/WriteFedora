@@ -2,7 +2,7 @@
   "name": "writefedora",
   "displayName": "WriteFedora",
   "description": "Enhance your Fedora documentation workflow in VS Code with templates, AsciiDoc shortcuts, and style-aware linting.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "Israelabazie",
   "engines": {
     "vscode": "^1.54.0"

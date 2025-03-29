@@ -37,7 +37,7 @@ export function generateTemplate() {
         "Bug Report",
         "CLI Reference",
         "User Guide",
-        "Contributor Guide",
+        "Contributor Guide"
       ];
       const selectedTemplate = await vscode.window.showQuickPick(templates, {
         placeHolder: "Select a template to generate",
