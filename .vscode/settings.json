@@ -2,6 +2,11 @@
     // Vale configuration
     "vale.valeCLI.path": "/usr/local/bin/vale",
     "vale.server.enabled": true,
+    "vale.configPath": ".vale.ini",
+    "vale.enable": true,
+    "vale.lint.files": true,
+
+
     
     // File visibility
     "files.exclude": {
