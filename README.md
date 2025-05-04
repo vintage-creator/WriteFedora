@@ -1,7 +1,7 @@
 
-# WriteFedora - Fedora Documentation Helper for VS Code
+# WriteFedora – Fedora Documentation Helper for VS Code and Open VSX Editors
 
-**Enhance your Fedora documentation workflow with templates, snippets, linting, and previews — all inside VS Code.**
+**Enhance your Fedora documentation workflow with templates, snippets, linting, and previews — in VS Code, VSCodium, Gitpod, and other Open VSX-compatible editors.**
 
 ## Features
 
