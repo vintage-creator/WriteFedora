@@ -37,7 +37,7 @@ Make your changes.
 
 ## 🧑‍💻 Development Notes
 
-- Recommended editor: **VS Code**
+- Recommended editor: **VS Code, VSCodium, Gitpod, and other Open VSX-compatible editors.**
 
 - Vale is required for style linting:
 
@@ -96,7 +96,7 @@ git push origin feature/your-feature-name
 
 - ✅ Check that the extension still loads correctly.
 - ✅ Run Vale locally (`vale .`) and resolve linting errors.
-- ✅ Test new snippets and templates inside VS Code.
+- ✅ Test new snippets and templates.
 - ✅ Update documentation if you added or changed features.
 
 ---
